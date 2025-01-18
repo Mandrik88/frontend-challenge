@@ -1,0 +1,31 @@
+{
+  "name": "frontend-challenge",
+  "version": "1.0.0",
+  "description": "Привет! Если ты хочешь стать частью команды Учи.ру в рамках стажёрской программы,  то тебе необходимо выполнить небольшое тестовое задание. Это нужно, что бы твои  потенциальные наставники смогли оценить твои навыки и сравнив их с остальными кандидатами выбрать лучших из лучших.",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist && webpack",
+    "dev": "webpack serve",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^7.1.2",
+    "gh-pages": "^6.3.0",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "dependencies": {
+    "core-js": "^3.40.0"
+  }
+}
